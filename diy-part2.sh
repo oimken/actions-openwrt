@@ -15,4 +15,4 @@ sed -i 's/192.168.1.1/192.168.1.11/g' package/base-files/files/bin/config_genera
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 
 # Disable https
-sed -i 's/option redirect_https	1/option redirect_https	0' package/network/services/uhttpd/files/uhttpd.config
+sed -i 's/option redirect_https	1/option redirect_https	0/g' package/network/services/uhttpd/files/uhttpd.config
